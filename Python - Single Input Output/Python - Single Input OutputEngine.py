@@ -243,3 +243,4 @@ class HelloWorld(Plugin):
         print("Plugin complete.")
         pass
 
+# v1 success - plugin runs . p.s , use the class name helloWorld only due to testing environment setup.

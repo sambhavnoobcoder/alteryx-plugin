@@ -196,13 +196,13 @@ class IncomingInterface:
         self.parent.output_anchor.close()  # Close outgoing connections.
 
 
-class HelloName(Plugin):
-    """HelloName plugin implementation."""
+class HelloWorld(Plugin):
+    """HelloWorld plugin implementation."""
     data_anchor_name = "Data"
     output_anchor_name = "Output"
 
     def __init__(self, provider: ProviderBase):
-        """Construct the HelloName plugin."""
+        """Construct the HelloWorld plugin."""
         self.config = provider.tool_config
         self.name = "Hello Name"
         self.provider = provider
@@ -242,4 +242,4 @@ class HelloName(Plugin):
         self.provider.io.info(f"{self.name} tool completed.")
         print("Plugin complete.")
         pass
-    
+
